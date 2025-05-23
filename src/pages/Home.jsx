@@ -39,7 +39,7 @@ function Home() {
           <p className="text-accent text-sm mb-2 font-mono tracking-tight leading-none">&lt;h1&gt;</p>
           <span className="text-accent text-sm font-['Fira_Code'] align-top"></span>{' '}
           HI!<br /> I’m <span className="text-cyan-400">Amit</span>,<br />
-          And I'm much more then just a developer{' '}
+          And I'm much more than just a developer{' '}
           <span className="text-accent text-sm mb-2 font-mono tracking-tight leading-none">&lt;/h1&gt;</span>
         </motion.h1>
         <br />
@@ -51,6 +51,8 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
           href="/public/cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-10 inline-block border-2 border-cyan-400 text-cyan-400 px-8 py-3 rounded hover:bg-white hover:text-black transition text-lg font-medium"
         >
           Download My CV
