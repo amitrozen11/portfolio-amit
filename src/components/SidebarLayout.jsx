@@ -1,14 +1,24 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useState } from 'react';
 
 export default function SidebarLayout({ children }) {
     const [devMode, setDevMode] = useState(false);
+    const location = useLocation();
 
     const handleLogoClick = () => {
         setDevMode(true);
         setTimeout(() => setDevMode(false), 2500);
     };
+
+    const navLink = (to, label) => (
+        <Link
+            to={to}
+            className={`${location.pathname === to ? 'text-highlight font-bold' : 'hover:text-highlight'} border-b border-gray-700 pb-1`}
+        >
+            {label}
+        </Link>
+    );
 
     return (
         <div className={`bg-background text-white transition-all duration-700 ${devMode ? 'bg-black' : ''}`}>
@@ -22,10 +32,10 @@ export default function SidebarLayout({ children }) {
 
                     {/* Navigation */}
                     <nav className="flex flex-col gap-4 text-lg">
-                        <Link to="/" className="hover:text-highlight border-b border-gray-700 pb-1">Home</Link>
-                        <Link to="/certificates" className="hover:text-highlight border-b border-gray-700 pb-1">Certificates</Link>
-                        <Link to="/projects" className="hover:text-highlight border-b border-gray-700 pb-1">Projects</Link>
-                        <Link to="/product-management" className="hover:text-highlight">PM</Link>
+                        {navLink('/', 'Home')}
+                        {navLink('/certificates', 'Certificates')}
+                        {navLink('/projects', 'Projects')}
+                        {navLink('/product-management', 'PM')}
                     </nav>
                 </div>
 

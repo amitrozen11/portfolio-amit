@@ -33,7 +33,7 @@ function Projects() {
       <h2 className="text-3xl font-bold mb-8">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
         {projects.map((project, index) => (
-          <div key={index} className="bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col h-full">
+          <div key={index} className="bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col h-full transition duration-300 hover:bg-gray-700 hover:scale-[1.01] hover:shadow-lg">
             <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
             <div className="p-4 flex flex-col flex-grow">
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
