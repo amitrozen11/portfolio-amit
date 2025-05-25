@@ -7,12 +7,13 @@ function Certificates() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-10 max-w-6xl w-full">
         {/* Transcript */}
-        <a href="/public/transcrip.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/transcrip.pdf" target="_blank" rel="noopener noreferrer">
           <div className="bg-gray-800 hover:bg-gray-700 p-4 rounded-xl shadow-xl text-center transition duration-300">
             <img src="/transcrip.jpg" alt="Transcript" className="w-full h-44 sm:h-48 object-cover rounded-md mb-3" />
             <p className="text-base sm:text-lg">Transcript</p>
           </div>
         </a>
+
 
         {/* Magshimim Certificate */}
         <a href="/Magshimim.jpg" target="_blank" rel="noopener noreferrer">
