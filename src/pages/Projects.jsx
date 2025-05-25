@@ -31,11 +31,18 @@ function Projects() {
   return (
     <div className="p-6 sm:p-10 min-h-screen bg-[#0d1117] text-white">
       <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-1">
         {projects.map((project, index) => (
-          <div key={index} className="bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col h-full transition duration-300 hover:bg-gray-700 hover:scale-[1.01] hover:shadow-lg">
-            <img src={project.image} alt={project.title} className="w-full h-44 sm:h-48 object-cover" />
-            <div className="p-4 flex flex-col flex-grow">
+          <div
+            key={index}
+            className="bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col lg:flex-row h-full transition duration-300 hover:bg-gray-700 hover:scale-[1.01] hover:shadow-lg"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full lg:w-1/3 h-44 sm:h-48 lg:h-auto object-cover"
+            />
+            <div className="p-4 flex flex-col flex-grow w-full lg:w-2/3">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-xs sm:text-sm mb-4 flex-grow">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -49,10 +56,20 @@ function Projects() {
                 ))}
               </div>
               <div className="flex flex-wrap gap-4 mt-auto text-sm">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:underline"
+                >
                   <FaGithub className="inline mr-1" /> GitHub
                 </a>
-                <a href={project.video} target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+                <a
+                  href={project.video}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:underline"
+                >
                   <FaYoutube className="inline mr-1" /> Demo
                 </a>
               </div>
