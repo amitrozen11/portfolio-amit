@@ -48,13 +48,13 @@ function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          href="/public/cv.pdf"
+          href="/CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-block border-2 border-cyan-400 text-cyan-400 px-6 py-2 rounded hover:bg-white hover:text-black transition text-base sm:text-lg font-medium"
-        >
+          className="mt-6 inline-block border-2 border-cyan-400 text-cyan-400 px-6 py-2 rounded hover:bg-white hover:text-black transition text-base sm:text-lg font-medium">
           Download My CV
         </motion.a>
+
       </div>
 
       <motion.div

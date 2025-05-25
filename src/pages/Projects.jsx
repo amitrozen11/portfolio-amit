@@ -21,7 +21,7 @@ function Projects() {
     {
       title: "Fuel Consumption Prediction for Ships – Machine Learning Project",
       description: "ML model for predicting ship fuel consumption, developed as part of a team using real-world data from the Braverus vessel. The project involved data cleaning, outlier handling, feature selection, and model comparison.",
-      image: "/hipfuel.png",
+      image: "/shipfuel.png",
       technologies: ["Python", "Pandas", "Scikit-learn", "XGBoost", "Streamlit"],
       github: "https://github.com/amitrozen11/Vessel-Fuel-Consumption-Prediction",
       video: "https://youtu.be/EPZkKgnwlP4?si=nrbWuTxhfx5dAUX5"
