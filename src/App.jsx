@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Certificates from './pages/Certificates';
 import Projects from './pages/Projects';
 import ProductManagement from './pages/ProductManagement';
+import Contact from './pages/Contact';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path="/certificates" element={<Certificates />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/product-management" element={<ProductManagement />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </SidebarLayout>
     </Router>

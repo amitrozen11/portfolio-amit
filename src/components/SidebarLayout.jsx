@@ -36,6 +36,7 @@ export default function SidebarLayout({ children }) {
                         {navLink('/certificates', 'Certificates')}
                         {navLink('/projects', 'Projects')}
                         {navLink('/product-management', 'PM')}
+                        {navLink('/contact', 'Contact')}
                     </nav>
                 </div>
 
