@@ -16,7 +16,7 @@ function TypingText({ text, speed = 30 }) {
   }, [index, text, speed]);
 
   return (
-    <p className="text-cyan-400 mt-4 text-lg max-w-xl font-light font-mono">
+    <p className="text-cyan-400 mt-4 text-sm sm:text-base max-w-xl font-light font-mono leading-relaxed">
       <span className="text-accent text-sm font-mono tracking-tight leading-none">&lt;p&gt;</span>{' '}
       {displayedText}
       <span className="text-cyan-400 animate-pulse ml-1">|</span>
@@ -33,15 +33,14 @@ function Home() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl sm:text-6xl lg:text-8xl font-extrabold leading-tight text-white mb-4 font-sans"
+          className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4 font-sans"
         >
           <p className="text-accent text-sm mb-2 font-mono tracking-tight leading-none">&lt;h1&gt;</p>
-          <span className="text-accent text-sm font-['Fira_Code'] align-top"></span>{' '}
           HI!<br /> I’m <span className="text-cyan-400">Amit</span>,<br />
           And I'm much more than just a developer{' '}
-          <span className="text-accent text-sm mb-2 font-mono tracking-tight leading-none">&lt;/h1&gt;</span>
+          <span className="text-accent text-sm font-mono tracking-tight leading-none">&lt;/h1&gt;</span>
         </motion.h1>
-        <br />
+
         <TypingText text="I built this portfolio to show more than just a pretty face :) I’m a proud honors student, a former IDF officer. I solve problems with code, lead with purpose, and professional ice cream taster on emotionally complex days." />
 
         <motion.a
@@ -51,10 +50,10 @@ function Home() {
           href="/CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-block border-2 border-cyan-400 text-cyan-400 px-6 py-2 rounded hover:bg-white hover:text-black transition text-base sm:text-lg font-medium">
+          className="mt-6 inline-block border-2 border-cyan-400 text-cyan-400 px-6 py-2 rounded hover:bg-white hover:text-black transition text-base sm:text-lg font-medium"
+        >
           Download My CV
         </motion.a>
-
       </div>
 
       <motion.div
