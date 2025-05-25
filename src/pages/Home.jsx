@@ -65,7 +65,7 @@ function Home() {
       >
         <div className="relative group">
           <img
-            src="/public/profile.png"
+            src="/profile.png"
             alt="Amit Rozen"
             className="rounded-2xl w-64 sm:w-80 lg:w-96 h-auto object-cover border border-gray-700"
           />

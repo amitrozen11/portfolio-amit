@@ -5,7 +5,7 @@ function Projects() {
     {
       title: "MERN Full Stack Animal Adoption Platform",
       description: "A real-time pet adoption website with a user-friendly interface for displaying and managing animals. Features full animal profiles, instant database updates, city-based filtering from an up-to-date list, and a contact form for adoption. Developed as part of a collaborative summer project.",
-      image: "/public/animal-project.png",
+      image: "/animal-project.png",
       technologies: ["MongoDB", "Express", "React", "Node.js"],
       github: "https://github.com/amitrozen11/queenb-summer-project-template-24",
       video: "https://youtu.be/DRWlgzjdh64?si=z7XrS8w2Ofu4i4Ko"
@@ -13,7 +13,7 @@ function Projects() {
     {
       title: "Game Vault App – Android Project",
       description: "Android app developed in Java for browsing and filtering video games by genre, rating, and year. Includes user login via Firebase, real-time data from REST API, and YouTube trailer integration. Built collaboratively with Git during active reserve duty.",
-      image: "/public/gamevault.png",
+      image: "/gamevault.png",
       technologies: ["Java", "Firebase", "Android Studio", "REST API"],
       github: "https://github.com/amitrozen11/GameVault",
       video: "https://youtu.be/Fa4C5RNCMiY?si=A_wiv5fV6LbTRMMs"
@@ -21,7 +21,7 @@ function Projects() {
     {
       title: "Fuel Consumption Prediction for Ships – Machine Learning Project",
       description: "ML model for predicting ship fuel consumption, developed as part of a team using real-world data from the Braverus vessel. The project involved data cleaning, outlier handling, feature selection, and model comparison.",
-      image: "/public/shipfuel.png",
+      image: "/hipfuel.png",
       technologies: ["Python", "Pandas", "Scikit-learn", "XGBoost", "Streamlit"],
       github: "https://github.com/amitrozen11/Vessel-Fuel-Consumption-Prediction",
       video: "https://youtu.be/EPZkKgnwlP4?si=nrbWuTxhfx5dAUX5"
