@@ -28,7 +28,7 @@ function Certificates() {
           <div className="w-full h-44 sm:h-48 bg-gray-600 rounded-md flex items-center justify-center text-gray-300">
             <span className="text-lg sm:text-xl">Coming Soon</span>
           </div>
-          <p className="text-base sm:text-lg mt-3">Bachelor's Degree – 09/2025</p>
+          <p className="text-base sm:text-lg mt-3">Bachelor's Degree - 09/25</p>
         </div>
       </div>
     </div>
