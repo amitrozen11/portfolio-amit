@@ -29,31 +29,31 @@ function Projects() {
   ];
 
   return (
-    <div className="p-10 min-h-screen bg-[#0d1117] text-white">
-      <h2 className="text-3xl font-bold mb-8">Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+    <div className="p-6 sm:p-10 min-h-screen bg-[#0d1117] text-white">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Projects</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
         {projects.map((project, index) => (
           <div key={index} className="bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col h-full transition duration-300 hover:bg-gray-700 hover:scale-[1.01] hover:shadow-lg">
-            <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+            <img src={project.image} alt={project.title} className="w-full h-44 sm:h-48 object-cover" />
             <div className="p-4 flex flex-col flex-grow">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-sm mb-4 flex-grow">{project.description}</p>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">{project.title}</h3>
+              <p className="text-xs sm:text-sm mb-4 flex-grow">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="bg-cyan-600 text-white px-2 py-1 rounded text-xs"
+                    className="bg-cyan-600 text-white px-2 py-1 rounded text-[10px] sm:text-xs"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <div className="flex items-center gap-4 mt-auto">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-white hover:underline text-sm">
-                  <FaGithub className="inline mr-1 text-white" /> GitHub
+              <div className="flex flex-wrap gap-4 mt-auto text-sm">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+                  <FaGithub className="inline mr-1" /> GitHub
                 </a>
-                <a href={project.video} target="_blank" rel="noopener noreferrer" className="text-white hover:underline text-sm">
-                  <FaYoutube className="inline mr-1 text-white" /> Demo
+                <a href={project.video} target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+                  <FaYoutube className="inline mr-1" /> Demo
                 </a>
               </div>
             </div>
